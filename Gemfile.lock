@@ -162,7 +162,7 @@ GEM
     turbolinks-source (5.1.0)
     tzinfo (1.2.4)
       thread_safe (~> 0.1)
-    uglifier (4.1.3)
+    uglifier (4.1.4)
       execjs (>= 0.3.0, < 3)
     unicode-display_width (1.3.0)
     web-console (3.5.1)
@@ -177,6 +177,7 @@ GEM
 PLATFORMS
   ruby
   x86_64-darwin-16
+  x86_64-darwin-17
 
 DEPENDENCIES
   byebug
@@ -197,4 +198,4 @@ DEPENDENCIES
   web-console (>= 3.3.0)
 
 BUNDLED WITH
-   1.16.0
+   1.16.1
