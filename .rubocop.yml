@@ -1,2 +1,20 @@
 inherit_from: .rubocop_todo.yml
 
+Style/MixinUsage:
+  Exclude:
+    - 'spec/**/*'
+    - 'bin/**/*'
+
+Metrics/LineLength:
+  Exclude:
+    - 'config/**/*'
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
+
+Metrics/MethodLength:
+  Exclude:
+    - 'db/migrate/**/*'
