@@ -36,20 +36,22 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'rails-i18n', '~> 5.0.0'
 
-gem 'devise'
-gem 'devise-i18n'
+gem 'devise', '~> 4.4.1'
+gem 'devise-i18n', '~> 1.5.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
-  gem 'pry-rails'
-  gem 'rubocop'
+  gem 'pry-rails', '~> 0.3.6'
+  gem 'rubocop', '~> 0.52.1'
 
-  gem 'capybara'
+  gem 'capybara', '~> 2.17.0'
   gem 'rspec-rails', '~> 3.7'
 
   gem 'guard-rspec', require: false
   gem 'spring-commands-rspec'
+
+  gem 'factory_bot_rails', '~> 4.8.2'
 end
 
 group :development do

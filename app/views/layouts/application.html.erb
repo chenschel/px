@@ -9,8 +9,19 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+  <header>
+    <nav>
+      <% if user_signed_in? %>
+        <%= link_to(I18n.t('sign_out'), destroy_user_session_path, method: :delete) %>
+      <% else %>
+        <%= link_to(I18n.t('devise.sessions.new.sign_in'), new_user_session_path) %>
+      <% end %>
+    </nav>
+    <div>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+    </div>
+  </header>
     <%= yield %>
   </body>
 </html>
